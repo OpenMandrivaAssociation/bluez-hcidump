@@ -1,5 +1,5 @@
 %define name 	bluez-hcidump
-%define version 1.34
+%define version 1.39
 %define release %mkrel 1
 
 Name: 		%{name}

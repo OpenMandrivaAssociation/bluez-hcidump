@@ -1,5 +1,5 @@
 %define name 	bluez-hcidump
-%define version 1.39
+%define version 1.40
 %define release %mkrel 1
 
 Name: 		%{name}
@@ -7,7 +7,7 @@ Summary: 	Bluetooth HCI packet dump
 Version: 	%{version}
 Release: 	%{release}
 
-Source:		%{name}-%{version}.tar.bz2
+Source0:	http://bluez.sourceforge.net/download/%{name}-%{version}.tar.lzma
 URL:		http://bluez.sourceforge.net/
 License:	GPL
 Group:		Communications
@@ -25,17 +25,14 @@ Bluetooth HCI packet dump.
 %make CFLAGS="$RPM_OPT_FLAGS"
 										
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall
 
 %clean
-rm -fr $RPM_BUILD_ROOT
+rm -fr %{buildroot}
 
 %files
 %defattr(-,root,root)
 %doc README AUTHORS ChangeLog NEWS
 %{_sbindir}/hcidump
 %{_mandir}/*/*
-
-
-

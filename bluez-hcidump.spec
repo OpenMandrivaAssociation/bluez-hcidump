@@ -11,7 +11,6 @@ Source0:	http://bluez.sourceforge.net/download/%{name}-%{version}.tar.lzma
 URL:		http://bluez.sourceforge.net/
 License:	GPL
 Group:		Communications
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	bluez-devel >= 2.23
 
 %description

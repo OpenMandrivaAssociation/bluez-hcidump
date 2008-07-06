@@ -1,6 +1,6 @@
 %define name 	bluez-hcidump
-%define version 1.41
-%define release %mkrel 2
+%define version 1.42
+%define release %mkrel 1
 
 Name: 		%{name}
 Summary: 	Bluetooth HCI packet dump
@@ -21,12 +21,13 @@ Bluetooth HCI packet dump.
 %setup -q
 
 %build
+export CFLAGS="%{optflags} -fPIC"
 %configure2_5x
-%make CFLAGS="$RPM_OPT_FLAGS"
-										
+%make
+
 %install
 rm -rf %{buildroot}
-%makeinstall
+%makeinstall_std
 
 %clean
 rm -fr %{buildroot}

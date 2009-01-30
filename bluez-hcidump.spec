@@ -1,6 +1,6 @@
 %define name 	bluez-hcidump
 %define version 1.42
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name: 		%{name}
 Summary: 	Bluetooth HCI packet dump

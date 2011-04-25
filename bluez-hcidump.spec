@@ -1,14 +1,14 @@
 %define name 	bluez-hcidump
-%define version 1.42
-%define release %mkrel 5
+%define version 2.0
+%define release %mkrel 1
 
 Name: 		%{name}
 Summary: 	Bluetooth HCI packet dump
 Version: 	%{version}
 Release: 	%{release}
 
-Source0:	http://bluez.sourceforge.net/download/%{name}-%{version}.tar.gz
-URL:		http://bluez.sourceforge.net/
+Source0:	http://www.kernel.org/pub/linux/bluetooth/%{name}-%{version}.tar.gz
+URL:		http://www.bluez.org
 License:	GPL
 Group:		Communications
 BuildRoot:	%{_tmppath}/%{name}-buildroot

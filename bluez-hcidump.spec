@@ -4,8 +4,8 @@
 
 Name: 		%{name}
 Summary: 	Bluetooth HCI packet dump
-Version: 	%{version}
-Release: 	%{release}
+Version: 	2.5
+Release: 	1%{release}
 
 Source0:	http://www.kernel.org/pub/linux/bluetooth/%{name}-%{version}.tar.gz
 URL:		http://www.bluez.org

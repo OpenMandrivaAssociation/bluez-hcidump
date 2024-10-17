@@ -8,7 +8,7 @@ Version: 	2.5
 Release: 	1%{release}
 
 Source0:	http://www.kernel.org/pub/linux/bluetooth/%{name}-%{version}.tar.gz
-URL:		http://www.bluez.org
+URL:		https://www.bluez.org
 License:	GPL
 Group:		Communications
 BuildRequires:	bluez-devel >= 2.23

@@ -11,6 +11,11 @@ Source0:	http://www.kernel.org/pub/linux/bluetooth/%{name}-%{version}.tar.gz
 URL:		https://www.bluez.org
 License:	GPL
 Group:		Communications
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	bluez-devel >= 2.23
 
 %description
